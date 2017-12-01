@@ -1,0 +1,56 @@
+@media screen and (max-width: 767px) {
+	body{
+		font-size:19px;
+		text-align:left;
+	}
+	header{
+		padding-top:30vh;
+		
+	}
+	nav ul {
+		padding-left:1vh;
+	}
+	nav ul li{
+		padding: 0vh;
+	}
+	nav ul li a{
+		font-size: 14px;
+	}
+	h1{
+		font-size: 55px;
+	}
+	h2{
+		font-size: 45px;
+	}
+	h3{
+		font-size: 35px;
+	}
+	h4{
+		font-size: 25px;
+	}
+	textarea{
+		width:100%;
+	}
+	/**********************************************************/
+
+	/****** Presentation ******/
+	#presentation{
+		padding:2vh 5vh;
+	}
+
+	/****** CV ******/
+	#cv{
+		padding:2vh 5vh;
+	}
+
+	/****** Contact ******/
+
+	#background{
+		padding:2vh 5vh;
+	}
+	/****** Footer ******/
+	#reseaux{
+		display:none;
+	}
+
+}
