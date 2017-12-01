@@ -1,0 +1,115 @@
+@media screen and (min-width: 1200px) {
+	body{
+	}
+	/*
+	ne fonctionne pas
+	body section :first-child{
+		margin-top:15%;
+	}
+	body section :last-child{
+		margin-bottom:15%;
+	}*/
+	section{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/**********************************************************/
+	/****** Journal ******/
+	#article-principal div{
+		width:45%;
+		margin:auto;
+	}
+	#photo-principal{
+		height: 50%;
+	}
+
+	.polaroid {
+		border-radius: 10px;
+		width: 250px;
+		height: 350px;
+	}
+
+	/****** Header ******/
+	#head{
+		margin-top: -45px;
+		margin-right: 15px;
+	}
+	/****** Footer ******/
+	#form-footer{
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	/****** Connexion / Inscription ******/
+	#connexion{
+		width:45%;
+		border-radius: 100px;
+		margin:auto;
+	}
+	#connexion form .bouton{
+		margin-top: 20px;
+	}
+	.flex{
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	/****** Bandeau ******/
+	div.bandeau, div.news, #slogan_header { 
+		height: 50px; 
+	}
+	div.bandeau {
+	   background-color: pink;
+	   display: flex;
+	   margin:0%;
+	   color:white;
+	}
+	div.news {
+	   width: 13%;
+	   background-color: black;
+	   z-index: 9;
+	   margin:0%;
+	}
+	.news p, #slogan_header { 
+		line-height: 50px; 
+		margin:0%;
+	}
+	.news p {
+	   color: white;
+	   text-align: center;
+	   margin:0%;
+	}
+	#slogan_header {
+	   -webkit-animation-name: textedefil; 
+	   -webkit-animation-iteration-count: infinite;
+	   -webkit-animation-duration: 20s; 
+	   -webkit-animation-timing-function :linear;
+	   -moz-animation-name: textedefil;
+	   -moz-animation-iteration-count: infinite; 
+	   -moz-animation-duration: 20s;
+	   -moz-animation-timing-function :linear; 
+	   position : relative;
+	   width: 87%;
+	   margin:0%;
+	}
+	@-webkit-keyframes textedefil {
+	   from { left: 100px; } to { left: -220px; }
+	}
+	@-moz-keyframes textedefil {
+	   from { left: 100px; } to { left: -220px; }
+	}
+	#slogan_header ul { 
+		margin:0%; 
+	}
+	#slogan_header ul li::after { 
+		content: " ♥ ";
+		color: magenta;
+	}
+	#slogan_header ul li:last-child::after { 
+		content: " ♥ "; 
+	}
+	#slogan_header ul li:first-child::before { 
+		content: " ♥ "; 
+		color: magenta;
+	}
+}
